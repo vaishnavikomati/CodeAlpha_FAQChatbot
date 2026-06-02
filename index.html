@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FAQ Chatbot</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right,#667eea,#764ba2);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    margin:0;
+}
+
+.container{
+    width:500px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+}
+
+button{
+    width:100%;
+    padding:10px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>FAQ Chatbot</h2>
+
+<form method="POST">
+
+<input type="text"
+name="question"
+placeholder="Ask a question"
+required>
+
+<br><br>
+
+<button type="submit">
+Ask
+</button>
+
+</form>
+
+<br>
+
+<div class="answer">
+{{ response }}
+</div>
+
+</div>
+
+</body>
+</html>
